@@ -14,3 +14,11 @@ qsort (x : xs) = qsort smaller ++ [x] ++ qsort larger
   where
     smaller = [ a | a <- xs, a <= x]
     larger = [ a | a <- xs, a > x]
+
+
+e8 x y = (y, x)
+e9 [x, y] = (x, True)
+
+
+e14 :: ([Char], [Float])
+e14 = ("Haskell", [1.1])
